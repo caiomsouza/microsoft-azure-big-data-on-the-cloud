@@ -1,15 +1,11 @@
 # Microsoft Azure Big Data on the Cloud
 
-
-
 |Product/Service Acronym| Product/Service Name |
 |----------|-------------|
 | ADLA   |  Microsoft Azure Data Lake Analytics |
 | ADF   |  Microsoft Azure Data Factory |
 | ADFv2   |  Microsoft Azure Data Factory version 2 |
 | ADLS   |  Microsoft Azure Data Lake Store |
-
-
 
 
 # Welcome to Azure Data Lake Analytics
