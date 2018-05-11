@@ -1,5 +1,7 @@
 # Microsoft Azure Big Data on the Cloud
 
+# Welcome to Azure Data Lake Analytics
+https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-overview
 
 # Azure Application Architecture Guide
 https://docs.microsoft.com/en-us/azure/architecture/guide/
@@ -34,5 +36,16 @@ https://azure.microsoft.com/en-gb/training/
 
 # Hands on Labs
 https://azure.microsoft.com/en-gb/training/hands-on-labs/
+
+# Scale U-SQL local run and test with Azure Data Lake U-SQL SDK
+https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-u-sql-sdk
+
+# Test and debug U-SQL jobs by using local run and the Azure Data Lake U-SQL SDK
+https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-local-run
+
+# Develop U-SQL scripts by using Data Lake Tools for Visual Studio
+https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
+
+
 
 
