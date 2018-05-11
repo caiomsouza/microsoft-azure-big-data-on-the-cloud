@@ -4,9 +4,10 @@
 
 |Product/Service Acronym| Product/Service Name |
 |----------|-------------|
-| ADLA   |  Azure Data Lake Analytics |
-| ADF   |  Azure Data Factory |
-| ADFv2   |  Azure Data Factory version 2 |
+| ADLA   |  Microsoft Azure Data Lake Analytics |
+| ADF   |  Microsoft Azure Data Factory |
+| ADFv2   |  Microsoft Azure Data Factory version 2 |
+| ADLS   |  Microsoft Azure Data Lake Store |
 
 
 
