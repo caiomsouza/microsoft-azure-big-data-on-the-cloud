@@ -2,6 +2,17 @@
 
 My main object was to create a repeatable process to apply Delta using U-SQL and Azure Data Lake.
 
+delta <BR>
+1. <BR>
+the fourth letter of the Greek alphabet ( Δ, δ ), transliterated as ‘d’. <BR>
+1. <BR>
+MATHEMATICS <BR>
+variation of a variable or function. <BR>
+2.<BR>
+MATHEMATICS <BR>
+a finite increment. <BR>
+
+
 First, we have 3 files:
 -	Base file 
 -	Delta 1
