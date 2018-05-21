@@ -54,6 +54,7 @@ https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-d
 # Develop U-SQL scripts by using Data Lake Tools for Visual Studio
 https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-data-lake-tools-get-started
 
-
+# Extractor Parameters (U-SQL)
+https://msdn.microsoft.com/en-us/azure/data-lake-analytics/u-sql/extractor-parameters-u-sql
 
 
