@@ -2,7 +2,7 @@
 
 My main object was to create a repeatable process to apply Delta using U-SQL and Azure Data Lake.
 
-delta <BR>
+<b>Delta</b> <BR>
 1. the fourth letter of the Greek alphabet ( Δ, δ ), transliterated as ‘d’. <BR>
 1. MATHEMATICS <BR>
 variation of a variable or function. <BR>
