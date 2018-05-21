@@ -93,7 +93,7 @@ USING Outputters.Csv();
 To test it, place this SampleData folder in your USQLDataRoot and run the U-SQL Script:
 C:\Users\caio.f.moreno\AppData\Local\USQLDataRoot
 
-Important:
+Important: <BR>
 Azure Data Lake Store is an append-only file system, like most big data stores.<BR>
 In this systems, records can only be added to the end of a file. <BR>
 Various analytics applications such as Azure Data Lake Analytics and Hive can be used to logically merge these base and delta streams.<BR>
