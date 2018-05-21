@@ -20,7 +20,15 @@
     <OutputPath>bin\Release\</OutputPath>
   </PropertyGroup>
   <ItemGroup>
+    <Script Include="DataPartitionLocalTest.usql" />
+    <Script Include="PartitionedOutputLabDemo.usql" />
     <Script Include="Script.usql" />
+    <ScriptCode Include="DataPartitionLocalTest.usql.cs">
+      <DependentUpon>DataPartitionLocalTest.usql</DependentUpon>
+    </ScriptCode>
+    <ScriptCode Include="PartitionedOutputLabDemo.usql.cs">
+      <DependentUpon>PartitionedOutputLabDemo.usql</DependentUpon>
+    </ScriptCode>
     <ScriptCode Include="Script.usql.cs">
       <DependentUpon>Script.usql</DependentUpon>
     </ScriptCode>

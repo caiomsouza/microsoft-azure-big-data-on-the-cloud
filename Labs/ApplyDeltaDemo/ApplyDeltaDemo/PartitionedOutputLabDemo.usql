@@ -1,0 +1,32 @@
+﻿SET @@FeaturePreviews = "DataPartitionedOutput:on";
+
+@data =
+    SELECT *
+    FROM(
+        VALUES
+        (
+            "Bob",
+            "US",
+            2015
+        ),
+        (
+            "Fred",
+            "CA",
+            2017
+        ),
+        (
+            "George",
+            "UK",
+            2016
+        )
+                   ) AS T(Name, Country, Year);
+
+@rs =
+    SELECT Name,
+           Country,
+           Year
+    FROM @data;
+
+OUTPUT @rs
+TO "/output/tjp40164/test-caio-{Country}-{Year}.csv"
+USING Outputters.Csv();

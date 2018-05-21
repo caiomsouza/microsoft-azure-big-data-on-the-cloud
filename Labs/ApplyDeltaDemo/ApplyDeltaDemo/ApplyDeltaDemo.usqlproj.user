@@ -1,11 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <StartFile>Script.usql</StartFile>
+    <StartFile>PartitionedOutputLabDemo.usql</StartFile>
     <BuildClusterPlanProperty>False</BuildClusterPlanProperty>
-    <ActiveFile>Script.usql</ActiveFile>
+    <ActiveFile>PartitionedOutputLabDemo.usql</ActiveFile>
   </PropertyGroup>
   <ItemGroup>
+    <ScriptUserData Include="DataPartitionLocalTest.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>DataLakeLocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:us2biglobals3adladev01 (caio.f.moreno@avanade.com)</ClusterComputeAccount>
+      <ClusterDatabase>master</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <RecurrenceName>DataPartitionLocalTest_ADLVSTool</RecurrenceName>
+      <RecurrenceId>92e02568-a84d-4c86-8ca3-fc1c123e3ee1</RecurrenceId>
+      <Parallelism>1</Parallelism>
+    </ScriptUserData>
+    <ScriptUserData Include="PartitionedOutputLabDemo.usql">
+      <UseLocalComputeAccount>false</UseLocalComputeAccount>
+      <LocalComputeAccount>DataLakeLocalCA:localcomputeaccount</LocalComputeAccount>
+      <LocalDatabase>master</LocalDatabase>
+      <LocalSchema>dbo</LocalSchema>
+      <ClusterComputeAccount>DataLakeCA:us2biglobals3adladev01 (caio.f.moreno@avanade.com)</ClusterComputeAccount>
+      <ClusterDatabase>master</ClusterDatabase>
+      <ClusterSchema>dbo</ClusterSchema>
+      <Parallelism>1</Parallelism>
+      <RecurrenceName>PartitionedOutputLabDemo_ADLVSTool</RecurrenceName>
+      <RecurrenceId>91e72e6c-e235-4425-ae0d-46da6a207daa</RecurrenceId>
+    </ScriptUserData>
     <ScriptUserData Include="Script.usql">
       <UseLocalComputeAccount>true</UseLocalComputeAccount>
       <LocalComputeAccount>DataLakeLocalCA:localcomputeaccount</LocalComputeAccount>
