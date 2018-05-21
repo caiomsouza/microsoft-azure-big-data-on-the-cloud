@@ -1,0 +1,69 @@
+﻿
+
+// Assumptions: 
+//      col1, 5 and 6 is the intented unique key
+//      each file includes a date in the filename
+
+DECLARE @baseFilesLocation string = "/SampleData/ApplyDelta/input/base_{filedate}.txt";
+DECLARE @deltaFilesLocation string = "/SampleData/ApplyDelta/input/delta_{filedate}.txt";
+
+
+// Get the base files
+@baseFiles =
+    EXTRACT col1 int,
+            col2 decimal,
+            col3 decimal,
+            col4 int,
+            col5 int,
+            col6 int,
+            col7 int,
+            filedate string
+
+    FROM @baseFilesLocation
+    USING Extractors.Text(delimiter : ' ');
+
+
+// Get the delta files
+@deltaFiles =
+    EXTRACT col1 int,
+            col2 decimal,
+            col3 decimal,
+            col4 int,
+            col5 int,
+            col6 int,
+            col7 int,
+            filedate string
+
+    FROM @deltaFilesLocation
+    USING Extractors.Text(delimiter : ' ', silent: true);
+
+
+@working = 
+    SELECT *
+    FROM @baseFiles
+    UNION ALL
+    SELECT *
+    FROM @deltaFiles;
+
+
+// Work out the (col1, 5 and 6) and max filedate combination
+@maxDates = 
+    SELECT col1, col5, col6, MAX(filedate) AS filedate
+    FROM @working
+    GROUP BY col1, col5, col6;
+
+
+// Join the original set (all base data, all delta files) to the max dates rowset, to get last record for each col1
+@output = SELECT w.*
+    FROM @working AS w
+        SEMIJOIN @maxDates AS d ON w.col1 == d.col1
+            AND w.col5 == d.col5
+            AND w.col6 == d.col6
+            AND w.filedate == d.filedate;
+
+
+OUTPUT @output
+    TO "/SampleData/ApplyDelta/output/output.csv"
+ORDER BY col1, col2, col3
+USING Outputters.Csv();
+
