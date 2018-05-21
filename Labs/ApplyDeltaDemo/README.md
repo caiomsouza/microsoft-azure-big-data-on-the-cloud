@@ -3,13 +3,10 @@
 My main object was to create a repeatable process to apply Delta using U-SQL and Azure Data Lake.
 
 delta <BR>
-1. <BR>
-the fourth letter of the Greek alphabet ( Δ, δ ), transliterated as ‘d’. <BR>
-1. <BR>
-MATHEMATICS <BR>
+1. the fourth letter of the Greek alphabet ( Δ, δ ), transliterated as ‘d’. <BR>
+1. MATHEMATICS <BR>
 variation of a variable or function. <BR>
-2.<BR>
-MATHEMATICS <BR>
+2. MATHEMATICS <BR>
 a finite increment. <BR>
 
 
