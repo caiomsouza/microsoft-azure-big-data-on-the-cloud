@@ -6,7 +6,7 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 
 
 ### ADX key takeaways
-- Use cases: Log and telemetry data | Time Series | IoT | Log Analytics
+- Use cases: Log and telemetry data | Time Series | IoT | Log Analytics | Big Data Warehouse (Big Data Query Engine)
 - Ad-hoc Exploration | Query Platform | Query capability, extreme Fast Query Platform designed for billions of rows (truly big data)
 - Cache (Hot cache - SSD and Memory)
 - No need to partition the data in ADX, it will take care for you. By default partition by time.
