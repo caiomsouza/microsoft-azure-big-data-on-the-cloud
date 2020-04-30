@@ -56,6 +56,9 @@ StormEvents
 | take 100
 ```
 
+### Azure Data Explorer - Kafka Integration - Hands On Lab series
+https://github.com/anagha-microsoft/adx-kafkaConnect-hol
+
 ### ADX Concurency 
 https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits
 
@@ -122,7 +125,8 @@ https://lensexplorer-web-namadhi.azurewebsites.net/#/home/start?_g=()
 - Support for direct query for PowerBI
 9. Advanced Analytics capabilities
 - Time series functions, anomaly detection, forecasting, regression functions out of the box
-- Ability to train models on ADX directly, and to score models as part of KQL queriesAzure Machine Learning service integration for bring your own model
+- Ability to train models on ADX directly, and to score models as part of KQL queries
+- Azure Machine Learning service integration for bring your own model
 - In-line Python and R support
 10. Support for stream ingestion
 - Supports Event Hub for stream ingestion
