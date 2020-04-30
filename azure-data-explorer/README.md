@@ -36,7 +36,62 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 ### Migrations
 - ELT (Elastic Search) migration to ADX
 
-### Features according to PG Team
+## Hands on Demo 
+
+### ADX - Code to create a table
+```
+.create table StormEvents (StartTime: datetime, EndTime: datetime, EpisodeId: int, EventId: int, State: string, EventType: string, InjuriesDirect: int, InjuriesIndirect: int, DeathsDirect: int, DeathsIndirect: int, DamageProperty: int, DamageCrops: int, Source: string, BeginLocation: string, EndLocation: string, BeginLat: real, BeginLon: real, EndLat: real, EndLon: real, EpisodeNarrative: string, EventNarrative: string, StormSummary: dynamic)
+```
+
+### ADX - Code to Ingest data into ADX table
+```
+.ingest into table StormEvents h'https://kustosamplefiles.blob.core.windows.net/samplefiles/StormEvents.csv?st=2018-08-31T22%3A02%3A25Z&se=2020-09-01T22%3A02%3A00Z&sp=r&sv=2018-03-28&sr=b&sig=LQIbomcKI8Ooz425hWtjeq6d61uEaq21UVX7YrM61N4%3D' with (ignoreFirstRecord=true)
+```
+
+
+### ADX - Code to Query a table
+```
+StormEvents
+| sort by StartTime desc
+| take 100
+```
+
+### ADX Concurency 
+https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits
+
+
+### Query data in Azure Data Lake using Azure Data Explorer
+https://docs.microsoft.com/en-us/azure/data-explorer/data-lake-query-data
+
+### Workshop to build scalable architectures with Azure Data Explorer (ADX)
+https://github.com/neilmillingtonmicrosoft/Cloud.Scale.Analytics.ADX
+
+### Quickstart: Ingest sample data into Azure Data Explorer
+https://docs.microsoft.com/en-us/azure/data-explorer/ingest-sample-data
+
+### ADX Dashboards
+https://preview.dataexplorer.azure.com/dashboards
+
+### Ingest data from Event Hub into Azure Data Explorer
+https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-event-hub#create-a-target-table-in-azure-data-explorer
+
+### Azure Data Explorer Connector for Apache Spark
+https://docs.microsoft.com/en-us/azure/data-explorer/spark-connector
+
+### Connect to Azure Data Explorer from Azure Databricks by using Python
+https://docs.microsoft.com/en-us/azure/data-explorer/connect-from-databricks
+
+### Ingest data from Kafka into Azure Data Explorer
+https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-kafka
+
+### Tutorial: Visualize data from Azure Data Explorer in Power BI
+https://docs.microsoft.com/en-us/azure/data-explorer/visualize-power-bi
+
+### LensExplorer 
+https://lensexplorer-web-namadhi.azurewebsites.net/#/home/start?_g=()
+
+
+### Features 
 1. Low latency, adhoc querying service over big data
 - Analytics database, with a hierarchical cache paradigm 
 - Hot cache (in-memory + disk cache)
@@ -83,60 +138,4 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 - For historical data; For cost-optimization and deeper insights, join hot data in ADX with data in data lake
 16. Azure Data Share integration
 - Usage isolation, data sharing in-place and read-only
-
-
-
-### ADX - Code to create a table
-```
-.create table StormEvents (StartTime: datetime, EndTime: datetime, EpisodeId: int, EventId: int, State: string, EventType: string, InjuriesDirect: int, InjuriesIndirect: int, DeathsDirect: int, DeathsIndirect: int, DamageProperty: int, DamageCrops: int, Source: string, BeginLocation: string, EndLocation: string, BeginLat: real, BeginLon: real, EndLat: real, EndLon: real, EpisodeNarrative: string, EventNarrative: string, StormSummary: dynamic)
-```
-
-### ADX - Code to Ingest data into ADX table
-```
-.ingest into table StormEvents h'https://kustosamplefiles.blob.core.windows.net/samplefiles/StormEvents.csv?st=2018-08-31T22%3A02%3A25Z&se=2020-09-01T22%3A02%3A00Z&sp=r&sv=2018-03-28&sr=b&sig=LQIbomcKI8Ooz425hWtjeq6d61uEaq21UVX7YrM61N4%3D' with (ignoreFirstRecord=true)
-```
-
-
-### ADX - Code to Query a table
-```
-StormEvents
-| sort by StartTime desc
-| take 100
-```
-
-
-### ADX Concurency 
-https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits
-
-
-### Query data in Azure Data Lake using Azure Data Explorer
-https://docs.microsoft.com/en-us/azure/data-explorer/data-lake-query-data
-
-### Workshop to build scalable architectures with Azure Data Explorer (ADX)
-https://github.com/neilmillingtonmicrosoft/Cloud.Scale.Analytics.ADX
-
-### Quickstart: Ingest sample data into Azure Data Explorer
-https://docs.microsoft.com/en-us/azure/data-explorer/ingest-sample-data
-
-### ADX Dashboards
-https://preview.dataexplorer.azure.com/dashboards
-
-### Ingest data from Event Hub into Azure Data Explorer
-https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-event-hub#create-a-target-table-in-azure-data-explorer
-
-### Azure Data Explorer Connector for Apache Spark
-https://docs.microsoft.com/en-us/azure/data-explorer/spark-connector
-
-### Connect to Azure Data Explorer from Azure Databricks by using Python
-https://docs.microsoft.com/en-us/azure/data-explorer/connect-from-databricks
-
-### Ingest data from Kafka into Azure Data Explorer
-https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-kafka
-
-### Tutorial: Visualize data from Azure Data Explorer in Power BI
-https://docs.microsoft.com/en-us/azure/data-explorer/visualize-power-bi
-
-### LensExplorer 
-https://lensexplorer-web-namadhi.azurewebsites.net/#/home/start?_g=()
-
 
