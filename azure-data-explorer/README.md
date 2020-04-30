@@ -121,7 +121,7 @@ https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits
 - Advanced analytics
 4. Kusto Query Language
 - Rich parsing (json, XML and more) and analytics functionality
-- Support for joins, aggregations, cross-database, cross-cluster queries
+- Support for joins, aggregations, cross-database, cross-cluster queries
 5. Server-side Programmability
 - Transformations at ingestion time with update policy functionality
 - Support for stored functions, materialized views (preview)
