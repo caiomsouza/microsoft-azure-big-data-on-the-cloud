@@ -48,6 +48,9 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 .ingest into table StormEvents h'https://kustosamplefiles.blob.core.windows.net/samplefiles/StormEvents.csv?st=2018-08-31T22%3A02%3A25Z&se=2020-09-01T22%3A02%3A00Z&sp=r&sv=2018-03-28&sr=b&sig=LQIbomcKI8Ooz425hWtjeq6d61uEaq21UVX7YrM61N4%3D' with (ignoreFirstRecord=true)
 ```
 
+![Ingest](https://github.com/caiomsouza/microsoft-azure-big-data-on-the-cloud/blob/master/azure-data-explorer/images/IngestKustoTable.jpg)
+
+
 
 ### ADX - Code to Query a table
 ```
@@ -55,6 +58,10 @@ StormEvents
 | sort by StartTime desc
 | take 100
 ```
+
+![Query](https://github.com/caiomsouza/microsoft-azure-big-data-on-the-cloud/blob/master/azure-data-explorer/images/KustoQuery.jpg)
+
+
 
 ### Azure Data Explorer - Kafka Integration - Hands On Lab series
 https://github.com/anagha-microsoft/adx-kafkaConnect-hol
