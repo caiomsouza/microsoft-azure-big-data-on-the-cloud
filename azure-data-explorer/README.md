@@ -62,19 +62,27 @@ StormEvents
 ![Query](https://github.com/caiomsouza/microsoft-azure-big-data-on-the-cloud/blob/master/azure-data-explorer/images/KustoQuery.jpg)
 
 
+### Config Power BI + ADX
+![ADX Power BI](https://github.com/caiomsouza/microsoft-azure-big-data-on-the-cloud/blob/master/azure-data-explorer/images/PowerBI0.png)
+
+### Tutorial: Visualize data from Azure Data Explorer in Power BI
+https://docs.microsoft.com/en-us/azure/data-explorer/visualize-power-bi
+
+## More Hands on Labs 
+
+### Workshop to build scalable architectures with Azure Data Explorer (ADX)
+https://github.com/neilmillingtonmicrosoft/Cloud.Scale.Analytics.ADX
 
 ### Azure Data Explorer - Kafka Integration - Hands On Lab series
 https://github.com/anagha-microsoft/adx-kafkaConnect-hol
 
-### ADX Concurency 
-https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits
+## Kafka + Data Lake + EventHub + Spark + Databricks + 
 
+### Ingest data from Kafka into Azure Data Explorer
+https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-kafka
 
 ### Query data in Azure Data Lake using Azure Data Explorer
 https://docs.microsoft.com/en-us/azure/data-explorer/data-lake-query-data
-
-### Workshop to build scalable architectures with Azure Data Explorer (ADX)
-https://github.com/neilmillingtonmicrosoft/Cloud.Scale.Analytics.ADX
 
 ### Quickstart: Ingest sample data into Azure Data Explorer
 https://docs.microsoft.com/en-us/azure/data-explorer/ingest-sample-data
@@ -91,14 +99,8 @@ https://docs.microsoft.com/en-us/azure/data-explorer/spark-connector
 ### Connect to Azure Data Explorer from Azure Databricks by using Python
 https://docs.microsoft.com/en-us/azure/data-explorer/connect-from-databricks
 
-### Ingest data from Kafka into Azure Data Explorer
-https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-kafka
-
-### Tutorial: Visualize data from Azure Data Explorer in Power BI
-https://docs.microsoft.com/en-us/azure/data-explorer/visualize-power-bi
-
-### LensExplorer 
-https://lensexplorer-web-namadhi.azurewebsites.net/#/home/start?_g=()
+### ADX Concurency (Query limits)
+https://docs.microsoft.com/en-us/azure/data-explorer/kusto/concepts/querylimits
 
 
 ### Features 
