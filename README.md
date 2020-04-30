@@ -2,6 +2,7 @@
 
 |Product/Service Acronym| Product/Service Name |
 |----------|-------------|
+| ADX (Kusto)   |  Microsoft Azure Data Explorer (Kusto) |
 | ADLA   |  Microsoft Azure Data Lake Analytics |
 | ADF   |  Microsoft Azure Data Factory |
 | ADFv2   |  Microsoft Azure Data Factory version 2 |
@@ -13,6 +14,12 @@ https://docs.microsoft.com/en-us/azure/data-lake-analytics/data-lake-analytics-o
 
 # Azure Application Architecture Guide
 https://docs.microsoft.com/en-us/azure/architecture/guide/
+
+# Azure Data Explorer (Kusto)
+
+Azure Data Explorer is a fast, fully managed data analytics service for real-time analysis on large volumes of data streaming from applications, websites, IoT devices, and more. Ask questions and iteratively explore data on the fly to improve products, enhance customer experiences, monitor devices, and boost operations. Quickly identify patterns, anomalies, and trends in your data. Explore new questions and get answers in minutes. Run as many queries as you need, thanks to the optimized cost structure. <BR>
+
+https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 
 # U-SQL 
 U-SQL is a data processing language that unifies the benefits of SQL with the expressive power of your own code. U-SQL's scalable distributed query capability enables you to efficiently analyze data in Data Lake Store, Azure Storage Blobs, and relational stores such as Azure SQL DB/DW.
