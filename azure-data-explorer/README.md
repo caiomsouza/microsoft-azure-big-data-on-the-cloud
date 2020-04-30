@@ -76,7 +76,7 @@ https://github.com/neilmillingtonmicrosoft/Cloud.Scale.Analytics.ADX
 ### Azure Data Explorer - Kafka Integration - Hands On Lab series
 https://github.com/anagha-microsoft/adx-kafkaConnect-hol
 
-## Kafka + Data Lake + EventHub + Spark + Databricks + 
+## Kafka + Data Lake + EventHub + Spark + Databricks 
 
 ### Ingest data from Kafka into Azure Data Explorer
 https://docs.microsoft.com/en-us/azure/data-explorer/ingest-data-kafka
