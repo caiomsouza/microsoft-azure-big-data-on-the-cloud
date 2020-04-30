@@ -6,12 +6,12 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 
 
 ### ADX key takeaways
-- Use cases: Log and telemetry data | Time Series | IoT | Log Analytics | Big Data Warehouse (Big Data Query Engine)
+- Use cases: Log and telemetry data | Time Series | IoT | Log Analytics | Big Data Query Engine
 - Ad-hoc Exploration | Query Platform | Query capability, extreme Fast Query Platform designed for billions of rows (truly big data)
 - Cache (Hot cache - SSD and Memory)
 - No need to partition the data in ADX, it will take care for you. By default partition by time.
 - Automatic Indexing
-- When required, you can define your partition strategy together with the ADX Product Group team
+- Option to choose partitioning scheme
 - ADX Data Modelling: Flat Tables | Denormalized data to avoid joins
 - Append-only data stores
 - Fully-managed services
@@ -29,7 +29,7 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 - Only way to get data from ADX is using ADX, data stored in a proprietary format in ADX internal Blob Store.
 
 ### ADX vs SQL DW
-- SQL DW: You can update and delete
+- SQL DW: You can update and delete | Insert/update capability
 - SQL DW: Design to build Data Warehouses (Star Schema - Fact and dimensions tables)
 - ADX: Flexibility to deal with unstrucutured 
 
@@ -75,6 +75,9 @@ https://github.com/neilmillingtonmicrosoft/Cloud.Scale.Analytics.ADX
 
 ### Azure Data Explorer - Kafka Integration - Hands On Lab series
 https://github.com/anagha-microsoft/adx-kafkaConnect-hol
+
+### Azure Kusto Labs
+https://github.com/Azure/azure-kusto-labs/tree/master/k8s-container-log-analytics/fluent-bit
 
 ## Kafka + Data Lake + EventHub + Spark + Databricks 
 
