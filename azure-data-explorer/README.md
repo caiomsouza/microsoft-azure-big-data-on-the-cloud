@@ -19,7 +19,7 @@ https://azure.microsoft.com/en-us/services/data-explorer/<BR>
 - Near/real-time analytics
 - High volume, velocity, variety (structured, semi-structured, free-text)
 - Relational query model:Filter, aggregate, join, calculated columns
-- Posible to stop the service and stop paying for compute
+- Possible to stop the service and stop paying for compute
 
 
 ### Things to consider 
